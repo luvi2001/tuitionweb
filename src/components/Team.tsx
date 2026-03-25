@@ -3,8 +3,8 @@ import aneshImage from '../assets/anesh.jpeg';
 import luviImage from '../assets/luvi.jpg';
 
 const tutors = [
-  { name: 'Anesh Shiran', subject: 'Mathematics', delay: '', uni: 'Colombo Open University', image: aneshImage },
-  { name: 'Luvinson I', subject: 'Science', delay: 'fade-up-delay-1', uni: 'SLIIT', image: luviImage },
+  { name: 'Anesh Shiran', subject: 'Mathematics', delay: '', uni: 'Bachelor of Management Studies Honours (Marketing),Open University of Sri Lanka', image: aneshImage },
+  { name: 'Luvinson I', subject: 'Science', delay: 'fade-up-delay-1', uni: 'BSc(Hons) Software Engineering, SLIIT', image: luviImage },
 ];
 
 export default function Team() {
