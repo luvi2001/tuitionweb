@@ -543,7 +543,10 @@ footer {
   .gallery-item:nth-child(n+2) { grid-column: span 1; }
   .nav-links { display: none; }
   .hero-inner { grid-template-columns: 1fr; padding: 48px 5%; }
-  .hero-right { display: none; }
+  .hero-right { display: block; max-width: 100%; }
+  .hero-img-main { width: 100%; aspect-ratio: 4/3; }
+  .hero-img-badge { position: relative; bottom: auto; left: auto; margin-top: 16px; }
+  .hero-img-tag { display: none; }
   .hero-stats { grid-template-columns: repeat(3, 1fr); }
   .about-grid, .program-grid, .register-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-img-side { display: none; }
@@ -553,7 +556,7 @@ footer {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
   .gallery-item:nth-child(1) { grid-column: span 2; grid-row: auto; }
   .gallery-item:nth-child(n+2) { grid-column: span 1; }
-  .gallery-item { grid-template-rows: 200px; }
+  .gallery-item { grid-template-rows: 200px; min-height: 200px; aspect-ratio: auto; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .form-row { grid-template-columns: 1fr; }
 }
