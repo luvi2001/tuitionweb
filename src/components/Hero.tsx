@@ -1,6 +1,4 @@
-import Image from 'next/image';
-
-const heroImage = require('../assets/image1.JPG');
+const heroVideo = '/Class.mp4';
 
 export default function Hero() {
   return (
@@ -45,13 +43,19 @@ export default function Hero() {
           <div style={{ position: 'relative', padding: '20px 24px 32px 0' }}>
             <div className="hero-img-tag">📍 Colombo 05</div>
             <div className="hero-img-main">
-              <Image
-                src={heroImage}
-                alt="Youth Light Learning Zone - Classroom"
-                fill
-                className="object-cover"
-                priority
-              />
+              <video
+                width="100%"
+                height="100%"
+                controls
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ borderRadius: '16px', boxShadow: '0 8px 24px rgba(18, 85, 164, 0.1)', backgroundColor: '#000' }}
+              >
+                <source src={heroVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="hero-img-badge">
               <div>
@@ -82,7 +86,7 @@ export default function Hero() {
         </div>
         <div className="hero-stat">
           <div className="hero-stat-num">
-            ∞<span></span>
+            Educational Workshops & Recreational Activities<span></span>
           </div>
           <div className="hero-stat-lbl">Support & growth</div>
         </div>

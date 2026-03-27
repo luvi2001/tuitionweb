@@ -1,5 +1,3 @@
-const classVideo = '/Class.mp4';
-
 export default function About() {
   return (
     <section className="about" id="about">
@@ -13,23 +11,7 @@ export default function About() {
           whether due to weak foundations or financial barriers.
         </p>
         <div className="about-grid">
-          <div className="about-video-container fade-up">
-            <video 
-              width="100%" 
-              height="auto" 
-              controls 
-              autoPlay
-              loop
-              muted
-              playsInline
-              style={{ borderRadius: '16px', boxShadow: '0 8px 24px rgba(18, 85, 164, 0.1)', backgroundColor: '#000' }}
-            >
-              <source src={classVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div className="fade-up fade-up-delay-1">
+          <div className="fade-up">
             <div className="collab-banner">
               <div className="collab-chip">Youth for Christ Sri Lanka</div>
               <span className="collab-x">×</span>
