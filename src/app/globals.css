@@ -221,7 +221,7 @@ nav {
 .hero-stat:hover::before {
   opacity: 1;
 }
-.hero-stat-num { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 32px; color: white; }
+.hero-stat-num { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 32px; color: white; word-break: break-word; overflow-wrap: break-word; line-height: 1.2; }
 .hero-stat-num span { color: var(--blue-light); }
 .hero-stat-lbl { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 6px; font-weight: 500; letter-spacing: 0.02em; }
 
@@ -555,7 +555,7 @@ footer {
   .hero-img-main { width: 100%; aspect-ratio: 4/3; }
   .hero-img-badge { position: relative; bottom: auto; left: auto; margin-top: 16px; }
   .hero-img-tag { display: none; }
-  .hero-stats { grid-template-columns: repeat(3, 1fr); }
+  .hero-stats { grid-template-columns: 1fr; }
   .about-grid, .program-grid, .register-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-img-side { display: none; }
   .features-grid { grid-template-columns: 1fr; }
